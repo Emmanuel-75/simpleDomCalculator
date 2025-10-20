@@ -1,0 +1,70 @@
+/* Write CSS code here */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: wheat;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.calculator{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    text-align: center;
+}
+
+#display{
+    padding: 20px;
+    font-size: 30px;
+    border: none;
+    text-align: right;
+    background-color: burlywood;
+    color: darkred;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,105px);
+}
+
+.btn{
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid blanchedalmond;
+    background-color:navajowhite;
+    cursor:pointer;
+}
+
+.equal{
+    grid-column:span 3;
+    background-color:tan;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+#mode-button{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: burlywood;
+    border: 5px solid brown;
+    position: relative;
+}
+
+#light-mode{
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    position: absolute;
+    cursor: pointer;
+}

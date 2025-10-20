@@ -1,0 +1,71 @@
+/* Write CSS code here */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #e6d5d8;
+    background-color: #1b1b11;
+    font-family:  sans-serif,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.calculator{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+h1{
+    text-align: center;
+}
+
+#display{
+    padding: 20px;
+    font-size: 30px;
+    border: none;
+    text-align: right;
+    background-color: #ded887;
+    color: #a23c2c;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,105px);
+}
+
+.btn{
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #ffebcd;
+    background-color:#ffdead;
+    cursor:pointer;
+}
+
+.equal{
+    grid-column:span 3;
+    background-color:#857a65;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+#mode-button{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ded887;
+    border: 5px solid #857a65;
+    position: relative;
+}
+
+#light-mode{
+    background-color: #1b1a17;
+    width: 50%;
+    height: 100%;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    position: absolute;
+    cursor: pointer;
+}
